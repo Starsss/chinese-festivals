@@ -1,0 +1,359 @@
+.lantern-box-left {
+    position: fixed;
+    top: -30px;
+    left: 50px;
+    z-index: 9999;
+    pointer-events: none
+}
+
+.lantern {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, .8);
+    border-radius: 50%;
+    transform-origin: 50% -100px;
+    animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1)
+}
+
+.lantern:before {
+    position: absolute;
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: orange;
+    background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03)
+}
+
+.lantern-line {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 2px;
+    height: 20px;
+    background: #dc8f03
+}
+
+.lantern-box-left {
+    pointer-events: none
+}
+
+.lantern-body {
+    width: 100px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, .1);
+    margin: 12px 8px 8px 10px;
+    border-radius: 50%;
+    border: 2px solid #dc8f03
+}
+
+.lantern-container {
+    width: 45px;
+    height: 90px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, .1);
+    margin: -2px 8px 8px 26px;
+    border-radius: 50%;
+    border: 2px solid #dc8f03
+}
+
+.lantern-text {
+    font-family: STKaiti, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    width: 25px;
+    margin: 0 auto
+}
+
+.tassel-thin {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    animation: swing 4s infinite ease-in-out;
+    transform-origin: 50% -45px;
+    background: orange;
+    border-radius: 0 0 5px 5px
+}
+
+.tassel-dot {
+    position: absolute;
+    top: 18px;
+    left: -2px;
+    width: 10px;
+    height: 35px;
+    background: orange;
+    border-radius: 0 0 0 5px
+}
+
+.tassel-bold {
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    background: #dc8f03;
+    border-radius: 50%
+}
+
+.lantern:after {
+    position: absolute;
+    bottom: -7px;
+    left: 10px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    margin-left: 20px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: orange;
+    background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03)
+}
+
+.lantern-box-right {
+    position: fixed;
+    top: -30px;
+    right: 50px;
+    z-index: 9999;
+    pointer-events: none
+}
+
+.lantern-box-right .lantern {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, .8);
+    border-radius: 50%;
+    transform-origin: 50% -100px;
+    animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1)
+}
+
+.lantern-box-right {
+    pointer-events: none
+}
+@keyframes swing {
+    0% {
+        transform:rotate(-10deg);
+    }
+    50% {
+        transform:rotate(10deg);
+    }
+    100% {
+        transform:rotate(-10deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .lantern-box-left, .lantern-box-right {
+        display: none;
+    }
+}
+
+.area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
+    width: 100%;
+    height:100vh;
+    z-index: -1;
+}
+
+.blessing{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.blessing li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/blessing-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.blessing li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.blessing li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.blessing li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    background-image: url('../images/blessing-2.png');
+}
+
+.blessing li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    background-image: url('../images/blessing-4.png');
+}
+
+.blessing li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.blessing li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+    background-image: url('../images/blessing-3.png');
+}
+
+.blessing li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+    background-image: url('../images/blessing-2.png');
+}
+
+.blessing li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.blessing li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.blessing li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/blessing-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+    border-color: lighten(#0040C1, 10%);
+  }
+  
+.cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  
+.cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  
+.cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  
+.cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);   
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%); 
+    opacity: 0;
+  }
+}
