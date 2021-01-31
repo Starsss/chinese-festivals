@@ -1,13 +1,13 @@
-=== 中国节日 ===
-Contributors: 六岁小少年
-Donate link: https://www.jkxuexi.com
-Tags: 中国节日
-Requires at least: 4.5
-Requires PHP: 5.6
-Tested up to: 5.6
-Stable tag: trunk
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== 中国节日 ===  
+Contributors: 六岁小少年  
+Donate link: https://www.jkxuexi.com  
+Tags: 中国节日  
+Requires at least: 4.5  
+Requires PHP: 5.6  
+Tested up to: 5.6  
+Stable tag: trunk  
+License: GPLv2 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
 ### 插件简介
 
